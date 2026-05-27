@@ -85,7 +85,7 @@ func getWeather(w http.ResponseWriter, r *http.Request) {
 
 	safeLocation := url.QueryEscape(request)
 
-	apiKey := "example123" // Use real API key of yours
+	apiKey := "example123" // Use real API key of yours or use environment keys containing your API key for a more secure alternative
 
 	apiURL := "https://api.weatherapi.com/v1/forecast.json?key=" + apiKey + "&q=" + safeLocation + "&days=1&aqi=yes&alerts=yes"
 
