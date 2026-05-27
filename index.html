@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nimbus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    
+    <nav class="navbar">
+         <input type="text" id="LocationInput" placeholder="Enter your location">
+        <button id="FetchButton">Get Weather</button>
+    </nav>
+
+    <main class="dashboard-grid">
+        
+        <div class="card weather-card">
+            <div class="card-content">
+                <h3 id="TempC">Temperature: </h3>
+                <p>*Next 3 days*</p>
+            </div>
+        </div>
+
+        
+        <div class="card alert-card">
+            <div class="card-content">
+                <h3 id="Alerts">Weather Alert</h3>
+                <h4 id="SeverityA">Serverity:</h4>
+                <p id="InstructionA">Instruction:</p>
+            </div>
+        </div>
+
+        
+        <div class="card hourmap-card">
+            <div class="card-content hourmap-layout">
+                <h3 id="Condition">State</h3>
+                <p>Quote</p>
+                <picture id="conditionImg">
+                    <source id="avif-source" srcset="placeholder.avif" type="image/avif">
+                    <img id="png-fallback" src="placeholder.png" alt="Dynamic Image">
+                </picture>
+            </div>
+        </div>
+
+        <div class="card map-card">
+            <div class="card-content">
+                <h3 id="Sunrise">Sunrise</h3>
+                <h3 id="Sunset">Sunset</h3>
+            </div>
+        </div>
+
+        <div class="card AQI-card">
+            <div class="card-content">
+                <h3 id="Windspeed">Windspeed</h3>
+                <h3 id="Rain_Percentage">Rain Percentage</h3>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>

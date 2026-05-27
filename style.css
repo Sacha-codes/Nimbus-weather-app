@@ -1,0 +1,78 @@
+/* 1. Global Box-Sizing Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Base Page Structure */
+body {
+    font-family: 'Inter', sans-serif;
+    background-image: url("UI_img/protobg.webp");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Keeps background still during scrolling */
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* 3. Navigation Bar Styling */
+.navbar {
+    background-color: rgba(250, 250, 250, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Core fallback for older engines */
+    padding: 35px;
+    border-radius: 15px;
+    width: 1035px; /* Aligns exactly with our 3-column grid width + gaps */
+    margin: 20px auto 40px auto; /* Centers navbar and pushes layout down */
+    color: white;
+}
+
+.navbar_content {
+    padding: 1px;
+}
+
+/* 4. Core Dashboard Grid Engine */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 325px); /* 3 Columns locked to your specific 325px width */
+    grid-template-rows: auto auto;           /* 2 Explicit horizontal grid tracks */
+    gap: 30px;                               /* Strict uniform padding blocks between your grid elements */
+    justify-content: center;                 /* Safely centers the layout system on the screen */
+    margin: 0 auto;
+}
+
+/* 5. Shared Card Styles */
+.card {
+    background-color: rgba(250, 250, 250, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;      
+    overflow: hidden;         
+    color: white;
+    width: 100%; /* Let the layout grid enforce the 325px column width */
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.card-content {
+    padding: 50px 30px;
+}
+
+/* 6. Hover States */
+.card:hover {
+    background-color: rgba(230, 230, 230, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: #FAFAFA;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* 7. Unique Layout Overrides */
+.hourmap-card {
+    grid-column: 3;        /* Fastens the element securely into the third structural lane */
+    grid-row: 1 / span 2;  /* Commands it to stretch downward covering both grid rows */
+}
+
+.hourmap-layout {
+    padding: 120px 30px;   /* Clean padding geometry for your larger layout card */
+}
