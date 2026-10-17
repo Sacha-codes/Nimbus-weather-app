@@ -17,8 +17,9 @@
 
 ##### **Installation**
 
-  To install the weather website, you will need to get the finder.go to get the backend and the index.html + style.css + app.js to get the full website template
-  You cannot get a fully compiled binary directly from the GitHub repo as the app relies on your own API key from WeatherAPI to function
+* To install the weather website, you will need to get the finder.go to get the backend and the index.html + style.css + app.js to get the full website template
+* You cannot get a fully compiled binary directly from the GitHub repo as the app relies on your own API key from WeatherAPI to function
+* Note: I highly recommend you put a different picture for protobg, as it is just a blank WebP with "ProtoBG" written on it 
 
 
 ##### **Technologies**
