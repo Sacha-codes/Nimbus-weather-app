@@ -31,7 +31,7 @@
 
 ##### **Contributions**
 
-You are welcome to report issues through GitHub Issues.
+You are welcome to report issues through GitHub Issues. Or make forks. Unfortunately, I don't plan on making updates or releases on this. 
 
 
 ##### **LICENSE**
